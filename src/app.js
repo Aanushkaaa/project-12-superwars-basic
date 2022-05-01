@@ -10,7 +10,7 @@ const initPlayers = (players) => {
         detailedPlayers[i] = {
           name: players[i],
           strength: getRandomStrength(),
-          image: "images/super-" + (i + 1) + ".png",
+          image: "./images/super-" + (i + 1) + ".png",
         };
         if (i % 2 == 0) {
           detailedPlayers[i].type = "hero";
