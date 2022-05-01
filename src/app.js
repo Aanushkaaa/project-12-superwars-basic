@@ -77,4 +77,9 @@ const buildPlayers = (players, type) => {
 };
 // Display players in HTML
 const viewPlayers = (players) => {
-
+  document.getElementById('heroes').innerHTML = buildPlayers(players, 'hero');
+    document.getElementById('villains').innerHTML = buildPlayers(players, 'villain');
+}
+window.onload = () => {
+    viewPlayers(initPlayers(PLAYERS));
+}
